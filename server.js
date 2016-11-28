@@ -14,6 +14,6 @@ app.get('/About', middleware.requireAuthentication, function(req, res) { //middl
   res.send('About Us!')
 })
 
-app.listen(PORT function() {
+app.listen(PORT, function() {
   console.log('App running on port ' + PORT);
 });
