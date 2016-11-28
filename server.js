@@ -1,6 +1,6 @@
 var express = require('express');
 var middleware = require('./middleware')
-var port = process.env.port || 3000;
+var PORT = process.env.PORT || 3000;
 var app = express();
 
 
@@ -14,6 +14,6 @@ app.get('/About', middleware.requireAuthentication, function(req, res) { //middl
   res.send('About Us!')
 })
 
-app.listen(port, function() {
-  console.log('App running on port ' + port);
+app.listen(PORT function() {
+  console.log('App running on port ' + PORT);
 });
